@@ -1,0 +1,421 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    height: 100%;
+    font-family: 'Mulish', sans-serif;
+    color: #2F2F2F;
+}
+/* gerneral css  */
+.container{
+    max-width: 1320px;
+    margin: auto;
+}
+section{
+    padding: 100px 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Fraunces', serif;
+
+}
+p{
+    color: #525665;
+}
+
+.title{
+    font-size:40px ;
+    font-weight: 600;
+    margin: 0 0 24px 0;
+}
+.sub-title{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+}
+.hero-icon img{
+    width: 35px;
+}
+.btn{
+    display: inline-block;
+    padding: 18px 36px;
+    background-color: transparent;
+    border: 1px solid #2A2C32;
+    border-radius: 10px;
+    color: #2A2C32;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s all;
+    }
+    .btn:hover{
+        background-color:#2a2c3213 ;
+        transition: 0.2s all;
+    }
+    .btn img{
+        width: 16px;
+        margin-left: 8px;
+    }
+    .btn-dark{
+    background-color: #2A2C32;
+    color: #fff;
+    transition: 0.2s all;
+    }
+    .btn-dark:hover{
+        background-color: #3a3c44;
+        transition: 0.2s all;
+    }
+    .btn-light{
+     background-color: #E5E6E6;
+     border-color: #E5E6E6;
+     color: #2A2C32;   
+     transition: 0.2s all;
+    }
+    .btn-light:hover{
+        background-color: #dadada;
+        border-color: #dadada;
+    }
+
+    .section-title-parent{
+        margin-bottom: 60px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-title-parent::before{
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 0;
+        height: 1px;
+     width: 100%;
+     background-color:#CCCCCC ;
+    
+    }
+    .section-title{
+        font-weight: 700;
+    font-size: 20px;
+    font-family: 'Mulish', sans-serif;
+    color: #242F65;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.395em;
+    text-transform: uppercase;
+    width: auto;
+    margin: 0;
+    background-color: #fff;
+    padding: 8px 20px;
+    position: relative;
+    }
+    .section-title::before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background-color:#CCCCCC ;
+        left: 0;
+        z-index: 1;
+    }
+    .section-title::after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 1px;
+        background-color:#CCCCCC ;
+        right: 0;
+        z-index: 1;
+    }
+    .text-center{
+        text-align: center;
+    }
+/* general css ended  */
+
+
+header{
+    padding: 18px 0;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    box-shadow: 0px 5px 10px 0px #b9c7d31a;
+}
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+.logo-wrapper .logo{
+    max-width: 200px;
+}
+
+.navbar-nav{
+    padding: 0;
+
+}
+.navbar-nav .nav-item{
+    display: inline-block;
+}
+.navlink{
+    padding: 0 12px;
+    display: inline-block;
+    text-decoration: none;
+    color:#2F2F2F ;
+    font-weight: 600;
+    transition: 0.2s all;
+}
+.navlink:hover{
+    transition: 0.2s all;
+    color:#7390F9 ;
+}
+
+
+.mobile-menu{
+    display: none;
+}
+
+/* hero banner css */
+
+.hero-banner{
+    background-image: url(Assets/Background-hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-inner{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero-content ,
+.hero-image-wrapper
+{
+    max-width: 50%;
+    width: 50%;
+    padding: 0 16px;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-title{
+    font-size: 60px;
+    line-height: 110%;
+    margin: 0 0 24px 0;
+    font-weight: 600;
+
+}
+.hero-title span{
+    display: inline-block;
+    padding: 8px 12px;
+    border-radius: 12px;
+    background-color: #7390F9;
+    color: #fff;
+    font-family: 'Mulish', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 110%;
+}
+.gmail{
+    font-size: 30px;
+    font-weight: 500;
+    color: #7390F9;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 32px;
+}
+
+.hero-image-wrapper{
+    display: flex;
+    justify-content: end;
+}
+.hero-image{
+    max-height: 750px;
+    max-width: 100%;
+}
+.mr-20{
+    margin-right: 20px;
+}
+/* hero banner css ended  */
+
+/* services  */
+
+.services{
+    background-color: #F6F4F6;
+}
+.services .section-title{
+    background-color:  #F6F4F6;
+}
+.services-card-wrapper{
+    display: flex;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+}
+.card-item{
+    width: 50%;
+    padding:0 15px;
+    flex: 0 0 auto;
+    margin-bottom: 30px;
+}
+.card-item:nth-last-child(1) ,
+.card-item:nth-last-child(2)
+{
+    margin-bottom: 0;
+}
+.card-item .card{
+padding: 40px;
+background: #FFFFFF;
+border-radius: 20px;
+}
+.services .card-body{
+    display: flex;
+    
+}
+.card-icon{
+    margin-right: 20px;
+}
+.Skill-list{
+    padding-left: 24px;
+    margin-bottom: 0;
+}
+.Skill-list li::marker{
+    color: #7390F9;
+    font-size: 24px;
+}
+/* services ended  */
+
+/* my craft css  */
+.craft-card-wrapper .card{
+    background-color: #F5F3FF;
+}
+.card-item.item-5 .card{
+background-color: #E4FCF3;
+}
+.card-item.item-4 .card{
+    background-color: #F5E7F4;
+    }
+    .card-item.item-3 .card{
+        background-color: #D7E7FF;
+        }
+.card-image{
+    margin-bottom: 30px;
+}
+.card-image img{
+    width: 100%;
+}
+.craft-card-wrapper{
+    display: flex;
+    margin: 0 -15px;
+    flex-wrap: wrap;
+}
+.card-item.view-all-cases{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-allcases{
+    background-color: #7390F9;
+    border-color: #7390F9;
+    color: #fff;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    transition: 0.2s all;
+}
+.btn-allcases:hover{
+    background-color: #8ba4ff;
+    border-color: #8ba4ff;
+    transition: 0.2s all;
+}
+.btn-allcases img{
+    width: 30px;
+    margin:0 0 10px 0;
+}
+/* my craft css ended  */
+
+/* footer css */
+footer{
+    background-image: url(Assets/Footer-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.footer-top{
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.nav-footer ,
+.social-contacts{
+    width: 20%;
+
+} 
+.nav-footer li ,
+.social-contacts li{
+    list-style-type: none;
+}
+.nav-footer li a,
+.social-contacts li a{
+    color: #fff;
+    display: inline-block;
+    padding: 8px 0;
+    text-decoration: none;
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    transition: 0.2s all;
+
+}
+.nav-footer li a:hover,
+.social-contacts li a:hover{
+color: #8ba4ff;
+transition: 0.2s all;
+}
+.gmail-contact{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding: 30px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.gmail-contact p{
+    margin: 0;
+    font-family: 'Fraunces', serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #242F65;
+
+}
+.footer-top .btn img{
+    margin-left: 0;
+    margin-right: 8px;
+}
+.footer-bottom{
+    border-top: 1px solid #815A89;
+    padding: 20px 0;
+}
+.footer-bottom p{
+    margin: 0;
+    text-align: center;
+    color: #ffff
+}
+/* footer css ended */
