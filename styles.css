@@ -152,6 +152,7 @@ header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
 }
 .logo-wrapper {
     display: flex;
@@ -368,6 +369,10 @@ footer{
     width: 20%;
 
 } 
+.nav-footer ul,
+.social-contacts ul{
+padding: 0;
+}
 .nav-footer li ,
 .social-contacts li{
     list-style-type: none;
@@ -419,3 +424,97 @@ transition: 0.2s all;
     color: #ffff
 }
 /* footer css ended */
+
+
+
+/* for ipad and mobile devices ended */
+
+@media screen and (max-width:992px) {
+    .container{
+        padding: 0 20px;
+    }
+    section{
+        padding: 60px 0;
+    }
+    body{
+        font-size: 16px;
+    }
+    .mobile-menu{
+        display: block;
+        cursor: pointer;
+    }
+    .navbar-nav{
+        display: none;
+    }
+    .hero-image-wrapper{
+        display: none;
+    }
+    .hero-content{
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    .hero-title{
+        font-size: 50px;
+        margin: 0 0 16px 0;
+    }
+    .hero-title span{
+        padding: 6px 10px;
+        border-radius: 8px;
+        font-size: 34px;
+    }
+    .title{
+        font-size: 32px;
+    margin: 0 0 16px 0;
+    }
+    .sub-title{
+        font-size: 24px;
+    }
+    .section-title{
+    font-size: 18px;
+    padding: 0px 12px;
+    }
+    .gmail{
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    .btn{
+        padding: 14px 20px;
+    }
+    .services .card-body {
+        display: block;
+    }
+    .card-icon {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .card-item{
+        width: 100%;
+    }
+    .card-item:nth-last-child(1), .card-item:nth-last-child(2){
+        margin-bottom: 30px;
+    }
+    .footer-top{
+        padding: 60px 0;
+    }
+    .nav-footer, .social-contacts{
+        width: 50%;
+        text-align: center;
+    }
+    .gmail-contact{
+        width: 100%;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+    .gmail-contact p{
+        font-size: 18px;
+
+    }
+}
+
+
+
+
+
+
+/* for mobile and ipad devices css ended  */
